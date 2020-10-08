@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Spectral+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="index.html"><img src="source/logo.png" alt="Anne_Sweet"></a>
+      <nav class="nav__header">
+        <a href="#">Статьи</a>
+        <a href="#">Обо мне</a>
+        <a href="#">Портфолио</a>
+        <a href="#form">Написать мне</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="blog">
+    <div class="container">
+      <div class="blog__header">
+        <h2>Все статьи</h2>
+        <select class="blog__theme" name="blog__theme">
+          <option value="none">Выбрать тему</option>
+          <option value="#">#</option>
+          <option value="#">#</option>
+        </select>
+      </div>
+      <div class="blog__inner">
+        <article class="blog__element1">
+          <div class="blog__element1__header">
+            <a href="#">
+              <img src="img/travel.jpg" alt="travel" />
+            </a>
+            <h3>Путешествие в Берлин в августе</h3>
+            <p>Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!</p>
+          </div>
+          <div class="blog__element1__footer">
+            <p> Теги: <a href="#">путешествия</a></p>
+            <p>29.09.20</p>
+          </div>
+        </article>
+        <article class="blog__element1">
+          <div class="blog__element1__header">
+            <a href="#">
+              <img src="img/moscow.jpg" alt="moscow" />
+            </a>
+            <h3>Где выпить колдбрю в Москве</h3>
+            <p>Собрала для вас список любимых кофеен, где подают лучший летний напиток.</p>
+          </div>
+          <div class="blog__element1__footer">
+            <p> Теги: <a href="#">город</a></p>
+            <p>24.07.20</p>
+          </div>
+        </article>
+        <article class="blog__element1">
+          <div class="blog__element1__header">
+            <a href="#">
+              <img src="img/book.jpg" alt="book" />
+            </a>
+            <h3>Прочитано: книжные рекомендации</h3>
+            <p>Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</p>
+          </div>
+          <div class="blog__element1__footer">
+            <p> Теги: <a href="#">книги</a></p>
+            <p>15.07.20</p>
+          </div>
+        </article>
+      </div>
+      <div class="blog__inner2">
+        <article class="blog__element2">
+            <div class="blog__element2__inner">
+              <a href="#">
+              <div class="blog__element2__header">
+                <h3>Снимки на плёнку</h3>
+                <p>Поделилась с вами весенними фотографиями, и секретами удачных снимков.</p>
+              </div>
+              </a>
+              <div class="blog__element2__footer">
+                <p> Теги: <a href="#">фотографии</a></p>
+                <p>29.06.20</p>
+              </div>
+            </div>
+        </article>
+        <article class="blog__element2">
+          <div class="blog__element2__inner">
+            <a href="#">
+              <div class="blog__element2__header">
+                <h3>Домашний чизкейк</h3>
+                <p>Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!</p>
+              </div>
+            </a>
+            <div class="blog__element2__footer">
+              <p> Теги: <a href="#">рецепты</a></p>
+              <p>24.08.20</p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="blog__footer">
+        <button type="button" name="button">Показать ещё</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="about__me">
+    <div class="container">
+      <h2>Обо мне</h2>
+      <article class="about__me_inner">
+        <img src="img/me.jpg" alt="me">
+        <div class="about__me_inner_text">
+          <p>Всем привет! Меня зовут Аня, и это мой личный блог.
+            Здесь ты найдёшь рассказы о моих путешествиях, снимки
+            на плёнку, рецепты, обзоры на книги. В общем, тексты о том,
+            что мне инетресно.</p>
+
+          <p>Я работаю копирайтером, поэтому мой блоге — это ещё и моё
+            портфолио. Ниже размещены несколько моих лучших
+            рабочих текстов. Буду рада новым сотрудничествам!</p>
+
+          <p>Если вы хотите написать мне — это можно сделать в соцсетях
+            или через <a href="#form">форму</a>. Всегда приятно услышать обратную связь
+            от читателей и познакомиться поближе.</p>
+
+          <p>Приятного чтения! </p>
+          <blockquote>
+            Я верю, что каждый раз пробуя новое,
+            выходящее за зону моего комфорта,
+            я действительно узнаю настояющую
+            себя.
+          </blockquote>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="portfolio">
+    <div class="container">
+      <h2>Портфолио</h2>
+      <div class="portfolio__inner">
+        <article class="portfolio__element">
+          <div class="portfolio__element__inner">
+            <a href="#">
+              <h3>Блог HTML Academy</h3>
+              <h4>«Как учиться продуктивно»</h4>
+              <p>Про основные методы обучения,
+                которые помогут быстро и надолго
+                запомнить информацию.</p>
+            </a>
+          </div>
+        </article>
+        <article class="portfolio__element">
+          <div class="portfolio__element__inner">
+            <a href="#">
+              <h3>Журнал «LNK»</h3>
+              <h4>«Зачем поцели нужны человеку?
+                И какие они бывают»</h4>
+              <p>Поцелуи — повсеместная ежедневная
+                практика. Но зачем люди целуются?
+                Какие смыслы вкладывают в этот ритуал?
+                И где корни этой практики?</p>
+            </a>
+          </div>
+        </article>
+        <article class="portfolio__element">
+          <div class="portfolio__element__inner">
+            <a href="#">
+              <h3>Журнал «Т — Л»</h3>
+              <h4>«Советы по эффективной
+                удалённой работе»</h4>
+              <p>Поделилась лайфхаками, которые помогают
+                мне работать продуктивно из дома. </p>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+    <button type="button" name="button">Показать ещё</button>
+  </section>
+
+  <section class="form" id="form">
+    <h2>Написать мне</h2>
+    <div class="container">
+      <form class="form__inner" action="index.html" method="post">
+        <div class="form__header">
+          <div class="form__name">
+            <label for="name">Ваше имя</label>
+            <input id="name" type="text" name="name" value="" placeholder="Иван Иванов">
+          </div>
+          <div class="form__email">
+            <label for="email">Email</label>
+            <input id="email" type="text" name="email"  value="" placeholder="google@gmail.com">
+          </div>
+        </div>
+        <div class="form__footer">
+          <label for="message">Сообщение</label><br>
+          <textarea id="message" name="message" rows="8" cols="80" placeholder="Напишите здесь ваше сообщение."></textarea>
+        </div>
+        <input type="submit" value="Отправить" class="submit">
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <nav class="footer__nav">
+        <a href="#">ВК</a>
+        <a href="#">Телеграм</a>
+        <a href="#">Инстаграм</a>
+        <a href="#">Твиттер</a>
+      </nav>
+      </div>
+  </footer>
+
+</body>
+
+</html>
