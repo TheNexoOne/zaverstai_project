@@ -12,7 +12,7 @@ commentForm.oninput = function() {
   let commentLength = commentField.value.length;
   let nameLength = commentName.value.length;
 
-  if ( commentLength < 130 && commentLength >= 1 && nameLength >= 3) {
+  if ( commentLength < 130 && commentLength >= 1 && nameLength >= 3 && nameLength <= 20 ) {
     submitButton.disabled = false;
   }
  else {
