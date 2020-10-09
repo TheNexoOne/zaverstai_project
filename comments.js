@@ -69,5 +69,5 @@ commentForm.onsubmit = function(evt) {
   commentField.value = '';
   commentName.value = '';
   commentEmail.value = '';
-
+  submitButton.disabled = true;
 };
