@@ -14,6 +14,11 @@ body {
   align-items: center;
 }
 
+.hidden{
+  display: none;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
@@ -49,6 +54,8 @@ button:hover{
   margin: 0 auto;
   box-sizing: border-box;
 }
+
+
 
 /*Header*/
 .header {
@@ -154,9 +161,6 @@ button:hover{
 }
 
 .blog__element1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   max-width: 387px;
   min-height: 420px;
   margin-bottom: 30px;
@@ -191,6 +195,7 @@ button:hover{
 }
 
 .blog__element1__footer {
+  margin-top: 12px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;

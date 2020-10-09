@@ -29,12 +29,15 @@
         <h2>Все статьи</h2>
         <select class="blog__theme" name="blog__theme">
           <option value="none">Выбрать тему</option>
-          <option value="#">#</option>
-          <option value="#">#</option>
+          <option value="travel">Путешествия</option>
+          <option value="city">Города</option>
+          <option value="book">Книги</option>
+          <option value="photo">Фото</option>
+          <option value="prescription">Рецепты</option>
         </select>
       </div>
       <div class="blog__inner">
-        <article class="blog__element1">
+        <article data-category="travel" class="blog__element1 blog__element">
           <div class="blog__element1__header">
             <a href="#">
               <img src="img/travel.jpg" alt="travel" />
@@ -47,7 +50,7 @@
             <p>29.09.20</p>
           </div>
         </article>
-        <article class="blog__element1">
+        <article data-category="city" class="blog__element1 blog__element">
           <div class="blog__element1__header">
             <a href="#">
               <img src="img/moscow.jpg" alt="moscow" />
@@ -60,7 +63,7 @@
             <p>24.07.20</p>
           </div>
         </article>
-        <article class="blog__element1">
+        <article data-category="book" class="blog__element1 blog__element">
           <div class="blog__element1__header">
             <a href="#">
               <img src="img/book.jpg" alt="book" />
@@ -75,7 +78,7 @@
         </article>
       </div>
       <div class="blog__inner2">
-        <article class="blog__element2">
+        <article data-category="photo" class="blog__element2 blog__element">
             <div class="blog__element2__inner">
               <a href="#">
               <div class="blog__element2__header">
@@ -89,7 +92,7 @@
               </div>
             </div>
         </article>
-        <article class="blog__element2">
+        <article data-category="prescription" class="blog__element2 blog__element">
           <div class="blog__element2__inner">
             <a href="#">
               <div class="blog__element2__header">
@@ -218,7 +221,7 @@
       </nav>
       </div>
   </footer>
-
+<script type="text/javascript" src="filter.js"></script>
 </body>
 
 </html>
