@@ -46,8 +46,10 @@
         её сформулировать. Если моё поведение регулируется BAS, мне нужно выбрать своей конечной целью какую-то награду: например, если я выучу английский, то смогу смотреть фильмы в оригинале. Если же я склонна к BIS поведению, целью нужно выбрать
         избежание проблем: если я заговорю на английском, то не потеряюсь в новой стране. И это можно использовать в различных сферах жизни.</p>
       <div class="article__footer">
-        <a class="like__button" type="button" name="button"><span
-         class="likes__number"></span></a>
+        <div class="like">
+        <button class="like__button"  href="#"></button><span
+         class="likes__number"></span>
+         </div>
         <nav class="article__footer__nav">
           <a href="#"><img src="source/twitter1.svg" alt=""></a>
           <a href="#"><img src="source/facebook1.svg" alt=""></a>
@@ -90,11 +92,11 @@
       </div>
       <h2>Оставить комментарий</h2>
       <form class="comments__form" action="topic.html" method="post">
-        <textarea сlass="comment__field" name="comment" rows="8" cols="80" placeholder="Написать комментарий..." id="comment"></textarea>
+        <textarea name="comment" rows="8" cols="80" placeholder="Написать комментарий..." id="comment"></textarea>
         <div class="comments__form1clm">
           <input type="text" name="name" value="" placeholder="Имя" class="name"><br>
           <input type="text" name="email" value="" placeholder="Почта" class="email"><br>
-          <input class="btn" type="submit" value="Отправить" disabled="true">
+          <input class="btn" type="submit" value="Отправить" disabled>
         </div>
       </form>
     </div>
@@ -110,8 +112,8 @@
       </nav>
     </div>
   </footer>
-  <script type="text/javascript" src="comments.js"></script>
-  <script type="text/javascript" src="likes.js"></script>
+  <script src="comments.js"></script>
+  <script src="likes.js"></script>
 </body>
 
 </html>
