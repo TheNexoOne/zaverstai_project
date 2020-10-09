@@ -624,6 +624,20 @@ button:hover{
   resize: none;
 }
 
+.form__footer.warning textarea {
+  margin-top: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid #202117;
+  border-radius: 10px;
+  font-size: 16px;
+  padding-top: 20px;
+  padding-left: 20px;
+  min-width: 837px;
+  min-height: 293px;
+  resize: none;
+  color: red;
+}
+
 .submit {
   border: 1px solid #202117;
   background-color: rgba(255, 255, 255, 0);
