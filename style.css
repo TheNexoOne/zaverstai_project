@@ -190,7 +190,7 @@ button:hover{
   transition: filter 0.2s linear;
 }
 
-.blog__element1 img:hover{
+.blog__element1:hover img{
   filter: blur(0);
 }
 
@@ -256,11 +256,6 @@ button:hover{
   width: 100%;
 }
 
-.blog__element1__footer time {
-  color: #2e2f22;
-  font-size: 16px;
-  font-weight: 400;
-}
 
 
 .blog__element1__footer p,
@@ -955,6 +950,5 @@ button:hover{
   margin-top: 55px;
 }
 
-/* 1 колонка формы комментов*/
 
 }
