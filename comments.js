@@ -8,20 +8,34 @@ let submitButton = document.querySelector('.btn')
 
 
 
-
-
-commentName.oninput = function() {
-  let nameLength = commentName.value.length;
+commentForm.oninput = function() {
   let commentLength = commentField.value.length;
+  let nameLength = commentName.value.length;
 
-
-  if (nameLength < 3) {
-    submitButton.setAttribute('disabled', true);
+  if ( commentLength < 130 && commentLength >= 1 && nameLength >= 3) {
+    submitButton.disabled = false;
   }
  else {
-    submitButton.removeAttribute('disabled');
+   submitButton.disabled = true;
   }
 }
+
+
+  commentField.oninput = function() {
+    let commentLength = commentField.value.length;
+
+    if (commentLength > 130) {
+      commentForm.classList.add('warning');
+      submitButton.disabled = true;
+    }else{
+      commentForm.classList.remove('warning');
+      submitButton.disabled = false;
+    }
+
+  }
+
+
+
 
 commentForm.onsubmit = function(evt) {
   evt.preventDefault();
@@ -31,7 +45,8 @@ commentForm.onsubmit = function(evt) {
   let newCommentInner = document.createElement('div');
   let newCommentImg = document.createElement('img');
   let newCommentName = document.createElement('span');
-  let newCommentText = document.createElement('span');
+  let newCommentText = document.createElement('p');
+
 
   counter = counter + 1;
   commentsList.append(newComment);
@@ -54,4 +69,5 @@ commentForm.onsubmit = function(evt) {
   commentField.value = '';
   commentName.value = '';
   commentEmail.value = '';
+
 };

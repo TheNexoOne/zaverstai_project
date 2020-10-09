@@ -15,15 +15,15 @@
     <div class="container">
       <a href="index.html"><img src="source/logo.png" alt="Anne_Sweet"></a>
       <nav class="nav__header2">
-        <a href="#">Статьи</a>
-        <a href="#">Обо мне</a>
-        <a href="#">Портфолио</a>
+        <a href="index.html#blog">Статьи</a>
+        <a href="index.html#about__me">Обо мне</a>
+        <a href="index.html#portfolio">Портфолио</a>
         <a href="index.html#form">Написать мне</a>
       </nav>
     </div>
   </header>
 
-  <section class="article">
+  <section class="article" >
     <div class="container">
       <h2>Как себя мотивировать</h2>
       <div class="article__header">
@@ -67,34 +67,34 @@
               <img src="img/commenter1.png" alt="" width="50" height="50" class="comment__img"><span class="comment__name" >Иван Петров</span>
             </div>
             <div class="comment__inner">
-              <span class="comment__text">Отличная статья! Спасибо.</span>
+              <p class="comment__text">Отличная статья! Спасибо.</p>
             </div>
           </li>
           <li>
             <div class="comment__header">
-              <img src="img/commenter2.png" alt="" width="50" height="50" class="comment__img"><span class="comment__name" >Ксения Ксения</span>
+              <img src="img/commenter2.png" alt="" width="50" height="50" class="comment__img"><div class="comment__name" >Ксения Ксения</div>
             </div>
             <div class="comment__inner">
-              <span class="comment__text"  >Отличный текст, добавила в закладки.</span>
+              <p class="comment__text"  >Отличный текст, добавила в закладки.</p>
             </div>
           </li>
           <li>
             <div class="comment__header">
-              <img src="img/commenter3.png" alt="" width="50" height="50" class="comment__img"><span class="comment__name" >Иван Иванов</span>
+              <img src="img/commenter3.png" alt="" width="50" height="50" class="comment__img"><div class="comment__name" >Иван Иванов</div>
             </div>
             <div class="comment__inner">
-              <span class="comment__text"  >Основательный материал! Можешь посоветовать какие-то книги на эту тему?</span>
+              <p class="comment__text"  >Основательный материал! Можешь посоветовать какие-то книги на эту тему?</p>
             </div>
           </li>
         </ul>
       </div>
       <h2>Оставить комментарий</h2>
       <form class="comments__form" action="index2.html" method="post">
-        <textarea name="comment" сlass="comment__field" rows="8" cols="80" placeholder="Написать комментарий..." id="comment" required></textarea>
+        <textarea сlass="comment__field" name="comment" rows="8" cols="80" placeholder="Написать комментарий..." id="comment"></textarea>
         <div class="comments__form1clm">
           <input type="text" name="name" value="" placeholder="Имя" class="name"><br>
           <input type="text" name="email" value="" placeholder="Почта" class="email"><br>
-          <input class="btn" type="submit" value="Отправить" disabled="true">
+          <input class="btn" type="submit" value="Отправить">
         </div>
       </form>
     </div>
