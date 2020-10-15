@@ -4,7 +4,9 @@ let commentName = document.querySelector('.name');
 let commentField = document.getElementById('comment');
 let commentEmail = document.querySelector('.email');
 let counter = 0;
-let submitButton = document.querySelector('.btn')
+let submitButton = document.querySelector('.btn');
+let symbCounter = document.querySelector('.symb__counter')
+let commentTextCounter = document.querySelector('.comment__text__counter')
 
 
 
@@ -24,12 +26,16 @@ commentForm.oninput = function() {
   commentField.oninput = function() {
     let commentLength = commentField.value.length;
 
+    symbCounter.textContent = commentLength;
+
     if (commentLength > 130) {
       commentForm.classList.add('warning');
       submitButton.disabled = true;
+      commentTextCounter.style.color = 'red';
     }else{
       commentForm.classList.remove('warning');
       submitButton.disabled = false;
+      commentTextCounter.style.color = '#2e2f22';
     }
 
   }
@@ -70,4 +76,5 @@ commentForm.onsubmit = function(evt) {
   commentName.value = '';
   commentEmail.value = '';
   submitButton.disabled = true;
+  symbCounter.textContent = 0;
 };

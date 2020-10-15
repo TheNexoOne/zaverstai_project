@@ -984,5 +984,11 @@ button.like__button{
   margin-top: 55px;
 }
 
+.comment__text__counter{
+  position: relative;
+  left: 280px;
+  bottom: 80px;
+  color: #2e2f22;
+  opacity: 70%;
 
-}
+  }
